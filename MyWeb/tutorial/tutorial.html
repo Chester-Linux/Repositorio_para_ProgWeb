@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Tutorial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            margin-top: 40px;
+            display: block;
+        }
+        pre {
+            background-color: #eee;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Como Criar um Servidor em Python</h1>
+
+    <p>Este tutorial mostra como criar um servidor web simples usando Python, tanto no Linux quanto no Windows.</p>
+
+    <h2>Servidor simples com Python no Linux</h2>
+    <p>1. Abra o terminal e navegue até a pasta onde estão seus arquivos HTML.</p>
+    <p>2. Execute o comando para iniciar o servidor na porta 8000:</p>
+    <pre>python3 -m http.server 8000</pre>
+    <p>3. Agora abra o navegador e acesse: <code>http://localhost:8000</code> para ver seus arquivos servidos.</p>
+
+    <h2>Servidor simples com Python no Windows</h2>
+    <p>1. Abra o Prompt de Comando (cmd) ou o PowerShell e navegue até a pasta do seu site.</p>
+    <p>2. Execute o comando:</p>
+    <pre>python -m http.server 8000</pre>
+    <p>3. Abra seu navegador e acesse <code>http://localhost:8000</code> para visualizar a página.</p>
+
+    <h2>Dicas extras</h2>
+    <ul>
+        <li>Use a porta que preferir, substituindo o <code>8000</code> no comando.</li>
+        <li>Se quiser que outras máquinas da rede acessem seu servidor, execute o comando com o parâmetro:</li>
+        <pre>python3 -m http.server 8000 --bind 0.0.0.0</pre>
+        <li>Para parar o servidor, pressione <kbd>Ctrl + C</kbd> no terminal.</li>
+    </ul>
+
+    <a href="../PedroLDepizzol.html" class="back-link">&larr; Voltar para o site principal</a>
+
+</body>
+</html>
