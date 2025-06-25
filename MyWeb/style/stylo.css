@@ -42,8 +42,8 @@ body {
   background-color: var(--opensuse-green-25);
   color: var(--text);
   font-family: 'Ubuntu', sans-serif;
-  margin: 0;
-  padding: 0;
+  margin: 10;
+  padding: 10;
 }
 
 header {
@@ -53,8 +53,7 @@ header {
 }
 
 div {
-  background-color: var(--opensuse-dark-blue-25);
-  border: 15px solid var(--opensuse-dark-blue-25);
+  border: 15px solid var(--opensuse-dark-blue-75);
 }
 
 h1, h2, h3 {
@@ -62,16 +61,16 @@ h1, h2, h3 {
 }
 
 a:link {
-  color: var(--opensuse-dark-cyan);
+  color: var(--opensuse-cyan);
   text-decoration: none;
 }
 
 a:visited {
-  color: var(--opensuse-dark-cyan-50);
+  color: var(--opensuse-cyan-50);
 }
 
 a:hover {
-  color: var(--opensuse-dark-cyan-75);
+  color: var(--opensuse-cyan-75);
   text-decoration: underline;
 }
 
