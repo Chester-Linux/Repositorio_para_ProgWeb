@@ -1,0 +1,149 @@
+:root {
+  --opensuse-green: #73ba25;
+  --opensuse-green-90: #81c13b;
+  --opensuse-green-75: #96cb5c;
+  --opensuse-green-50: #b9dc92;
+  --opensuse-green-25: #dceec8;
+  --opensuse-dark-blue: #173f4f;
+  --opensuse-dark-blue-90: #2f5361;
+  --opensuse-dark-blue-75: #516f7b;
+  --opensuse-dark-blue-50: #8b9fa7;
+  --opensuse-dark-blue-25: #c5cfd3;
+  --opensuse-cyan: #35b9ab;
+  --opensuse-cyan-90: #4ac0b4;
+  --opensuse-cyan-75: #68cbc0;
+  --opensuse-cyan-50: #9adcd5;
+  --opensuse-cyan-25: #ccedea;
+
+  --opensuse-dark-cyan: #00a489;
+  --opensuse-dark-cyan-90: #1aad95;
+  --opensuse-dark-cyan-75: #40bba7;
+  --opensuse-dark-cyan-50: #7fd1c4;
+  --opensuse-dark-cyan-25: #bfe8e1;
+  --opensuse-dark-green: #6da741;
+  --opensuse-dark-green-90: #7cb054;
+  --opensuse-dark-green-75: #92bd71;
+  --opensuse-dark-green-50: #b6d3a0;
+  --opensuse-dark-green-25: #dae9cf;
+  --opensuse-blue: #21a4df;
+  --opensuse-blue-90: #38ade2;
+  --opensuse-blue-75: #59bbe7;
+  --opensuse-blue-50: #90d1ef;
+  --opensuse-blue-25: #c7e8f7;
+
+  --background: #f0f0f0;
+  --surface: #ffffff;
+  --border: #cccccc;
+  --text: #333333;
+  --heading: #2a2a2a;
+}
+
+header {
+  display: flex; 
+  flex-flow: row nowrap;
+  justify-content: space-between; 
+  align-items: center;
+  height: 60px;
+  background-color: var(--opensuse-dark-blue);
+  padding: 0 20px;
+}
+
+header h1 {
+    color: var(--opensuse-cyan);
+    font-family: cursive;
+    font-size: 20px;
+}
+
+header nav{
+  flex: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav > * {
+    flex-grow: 1;
+    text-align: center;
+}
+
+header nav a {
+    color: var(--opensuse-cyan);
+    text-decoration: none;
+    font-weight: bold;
+}
+header nav a:hover{
+    transform: scale(1.2);
+}
+
+
+.layout {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+aside {
+    border: 1px solid black;
+    width: 20%;
+    background-color:var(--opensuse-green-90);
+    }  
+.nav-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    height: 100%;
+}
+.nav-aside a {
+    display: block;
+    padding: 10px 20px;          
+    background-color: var(--surface);    
+    color: var(--text);
+    text-decoration: none;
+    border-radius: 4px; 
+    font-weight: bold; 
+}
+.nav-aside a:hover {
+    transform: scale(1.2);
+}
+main {
+    flex:1;
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    padding: 20px;
+}
+
+#start img {
+    display: block; 
+    margin: auto;   
+    height: 200px;
+    width: auto;
+}
+#start div {
+    margin: 10px auto;
+    height: 200px;
+    width: 50%;
+    border: 4px solid var(--opensuse-dark-blue);
+    background-image: url(../images/GreenBackground.png);
+    text-align: justify;
+}
+#start p {
+    text-align: center;
+}
+#school {
+    text-align: center;
+}
+#programming {
+    text-align: center;
+}
+#opensource {
+    text-align: center;
+}
+footer {
+    background-color: var(--background);
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid var(--border);
+    padding: 4px;
+}

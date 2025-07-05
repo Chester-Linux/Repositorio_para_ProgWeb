@@ -3,48 +3,64 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="author" content="Pedro L. Depizzol">
   <title>Meu site horricel</title>
   <link rel="icon" href="images/logoSerra.png" type="image/png">
-  <link rel="stylesheet" href="style/stylo.css">
-  <style>
-    body{
-      background-image: url(images/logoSerra.png);
-      background-repeat: no-repeat;
-      background-position: right top;
-      background-size: 50px;
-      background-attachment: scroll;
-    }
-
-    div{
-      background-image: url(images/GreenBackground.png);
-    }
-  </style>
+  <link rel="stylesheet" href="style/mainstylo.css">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <header>
+    <h1>Pedro L. Depizzol</h1>
+    <nav>
+      <a href="#start">Início</a>
+      <a href="#school">Minha instituição</a>
+      <a href="#programming">Minha curiosidade</a>
+      <a href="#opensource">Minha visão</a>
+    </nav>
+  </header>
+  <div class="layout">
+    <aside>
+      <nav class="nav-aside">
+        <a href="tutorial/tutorial.html">Tutorial</a>
+        <a href="https://serra.ifes.edu.br/" target="_blank">IFES</a>
+        <a href="curriculo.html">Meu currículo</a>
+        <a href="https://www.reddit.com/r/linuxbrasil/" target="_blank">r/linuxbrasil</a>
+        <a href="https://www.opensuse.org" target="_blank">OpenSUSE</a>
+      </nav>
+    </aside>
+    <main>
+            <section id="start">
+                <img src="images/Geeko.jpg" alt="avatar">
+                <div>
+                    <p>Quem sou eu?</p>
+                </div>
+            </section>
+            <section id="school">
+                <h2>Minha instituição</h2>
+                <p>Estudo no IFES Serra</p>
+                <p>Atualmente estou para me formar, no curso tecnico de IoT</p>
+            </section>
+            <section id="programming">
+              <h2>Minha curiosidade sobre softwares</h2>
+              <p>Sempre tive acesso ao computador deis de novo</p>
+              <p>Então faz muito tempo que eu uso e venho aprendendo como um computador funciona</p>
+              <p>E obviamente que essa curiosidades nasceram por causa dos jogos digitais</p>
+            </section>
+            <section id="opensource">
+              <h2>Minha visão sobre softwares</h2>
+              <p>Tem quase um ano que não uso mais o Windows, migrei completamente para o Linux</p>
+              <p>E me fez perceber em como as pessoas tem uma visão rasa sobre como celulares/computadores funcionam</p>
+              <p>O que é ironico, pois ele usam isso todos os dias</p>
+              <p>Imagina ter um carro e não saber como ele funciona?</p>
+            </section>
+        </main>
+  </div>
 
-    <h1 style="text-align: center; font-family: Arial, Verdana, sans-serif;">Pedro L. Depizzol</h1>
-    <div style="text-align: center;">
-      <img src="images/Geeko.jpg" width="400px">
-    </div>
-    
-
-    <h2 style="text-align: justify;">I use Linux btw</h2>
-    <p style="text-align: justify;">Não gosto de bloatwares e de anuncios no meu sistema operacional</p>
-    <p>Seja membro da <a href="https://www.reddit.com/r/linuxbrasil/">Linux Brasil</a>!!!</p>
-
-    <h2>OpenSUSE is life</h2>
-    <p>Sendo a melhor empresa de código aberto deis de 1992!</p>
-
-    <a href="tutorial/tutorial.html">Ir para o tutorial</a>
-    <br>
-    <a href="Curriculo.html">Ir para o meu curriculo</a>
-<!-- <a href="PedroLDepizzol.html" class="back-link">&larr; Voltar para o site principal</a>-->
-    <h2>Minha instituição</h2>
-    <a href="https://serra.ifes.edu.br/" target="_blank">
-            <img src="images/serra.png" alt="Campus Serra">
-        </a>
+  <footer>
+            <p>&copy;2025 Pedro L. Depizzol. Todos os direitos reservados - orientação: prof. Jonathan Toczek</p> 
+  </footer>
 </body>
 
 </html>
